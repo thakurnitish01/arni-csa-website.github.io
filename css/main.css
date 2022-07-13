@@ -1,0 +1,165 @@
+.text
+{
+    text-align: justify;
+}
+.row
+{
+    justify-content: center;
+}
+video::-webkit-media-controls{
+    display: none;
+    -webkit-appearance: none;
+}
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+    .video
+    {
+      width: 100%;
+    }
+  }     
+  /* for student achivements */
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  .profile
+  {
+    width: 5rem;
+    border-radius: 5rem;
+    margin-right: 1rem;
+  }
+  .profile-grid
+  {
+    display: flex ;
+  }
+  .cert-name
+    {
+      font-size: 1rem;
+      margin-top: 2rem;
+    }
+  @media screen and (max-width: 600px) {
+    .cert-name
+    {
+      font-size: 1rem;
+      margin-top: 2rem;
+    }
+  .certs-images
+  {
+    display: flex;
+  }
+  }    
+  /* css................................ */
+  
+/* The grid: Four equal columns that floats next to each other */
+.column-1 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column-1 img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column-1 img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row-1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container-1 {
+  position: relative;
+  display: none;
+}
+/* teachers profile */
+.t-cont
+{
+  margin-left: 10rem;
+}
+.teacher-images
+{
+  float: left;
+}
+.teacher-profile
+  {
+    width: 17rem;
+  }
+@media screen and (max-width: 992px) {
+  .teacher-images {
+    width: 32%;
+  }
+  .teacher-profile
+  {
+    width: 10rem;
+  }
+  .t-cont
+{
+  margin-left: 0rem;
+}
+}
+@media screen and (max-width: 600px) {
+  .teacher-images {
+    width: 50%;
+  }
+  .teacher-profile
+  {
+    width: 12rem;
+  }
+  .t-cont
+{
+  margin-left: 0rem;
+}
+}
+.feedback
+{
+  background:url('../images/b9.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
